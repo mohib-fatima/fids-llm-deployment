@@ -33,3 +33,16 @@ https://doi.org/10.5281/zenodo.21728189
 ## License
 
 The paper is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+## PDF
+
+[Read the paper PDF](./FIDS.pdf)
+
+For citation and the canonical public record, use the Zenodo DOI:
+
+https://doi.org/10.5281/zenodo.21728189
+
+## Citation
+
+If you reference this work, please cite:
+
+> Fatima, M. (2026). *Feedback-Induced Distribution Shift in Multilingual LLM Deployment: Evidence, Characterization, and RL-Based Adaptation Strategies*. Technical Report. https://doi.org/10.5281/zenodo.21728189
