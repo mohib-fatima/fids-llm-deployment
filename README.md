@@ -13,91 +13,62 @@ Research repository accompanying:
 
 ## Overview
 
-This repository accompanies a technical report introducing **Feedback-Induced Distribution Shift (FIDS)**, a deployment-phase phenomenon in which model-generated outputs influence subsequent user queries and progressively reshape the effective input distribution encountered by a deployed large language model.
+Large language models deployed across multilingual production environments often experience performance degradation for underrepresented languages over time. This paper identifies this phenomenon as **Feedback-Induced Distribution Shift (FIDS)**, a systems-level failure in which design and evaluation choices allow localized quality declines to persist while aggregate metrics remain stable.
 
-The work focuses on multilingual production environments and examines how feedback dynamics can create compounding reliability problems that may not be visible in point-in-time or aggregate evaluation.
+Drawing on production-scale experience in multilingual LLM deployment, the paper characterizes three recurring patterns through which these failures emerge, gives each pattern a formal proof-backed guarantee, and shows that standard benchmarking approaches are poorly suited to detect them. It also introduces **RL-Stable Deployment (RLSD)**, a reinforcement-learning-based framework that dynamically adapts inference policies in response to performance signals, without requiring model retraining.
 
-The paper develops:
+For the full taxonomy and mechanism details, see [docs/fids-taxonomy.md](docs/fids-taxonomy.md).
+For project motivation, scope, and open research questions, see [docs/research-overview.md](docs/research-overview.md).
 
-1. A formal taxonomy of three FIDS mechanisms.
-2. Theoretical conditions describing when feedback-induced degradation can occur.
-3. **RL-Stable Deployment (RLSD)**, an inference-time adaptation framework proposed to detect and respond to FIDS signals without requiring model retraining.
+## FIDS Taxonomy (summary)
 
-## FIDS Taxonomy
+1. **Aggregate Masking Effect (AME)** — locale-level quality regressions get averaged away by aggregate dashboards, so the top-line metric looks stable while specific segments quietly degrade.
+2. **Aspirational Deferral Lock (ADL)** — once a metric crosses an acceptable threshold, the backlog behind it stops getting revisited; the deferral becomes permanent by default, not by decision.
+3. **Low-Resource Locale Collapse (LRLC)** — locales that start under-resourced get deprioritized every cycle for the same structural reason, compounding into progressively worse degradation over time.
 
-### 1. Lexical Echo Amplification (LEA)
-
-LEA describes a feedback process in which lexical patterns introduced by model outputs are subsequently incorporated into user queries, causing the effective input distribution to increasingly over-represent model-generated linguistic patterns.
-
-The paper describes temporal query-distribution divergence and n-gram frequency tracking as potential signals for detecting this mechanism.
-
-### 2. Low-Resource Locale Collapse (LRLC)
-
-LRLC describes a feedback dynamic in multilingual deployment in which weaker performance for users in lower-resource linguistic markets can interact with feedback and adaptation mechanisms in ways that further deprioritize those locales.
-
-The paper characterizes this as a potentially self-reinforcing degradation process that may be obscured by aggregate performance metrics.
-
-### 3. Intent-Anchor Drift (IAD)
-
-IAD describes a semantic feedback process in which model responses systematically resolve ambiguous queries in particular directions, causing users to adapt their query formulation toward the model's preferred interpretations.
-
-Unlike LEA, IAD operates primarily at the level of intent and meaning rather than surface lexical patterns.
+Full definitions, formal propositions, and proofs are in the paper and in [docs/fids-taxonomy.md](docs/fids-taxonomy.md).
 
 ## RL-Stable Deployment (RLSD)
 
-The paper proposes **RL-Stable Deployment (RLSD)** as an inference-time adaptation framework.
-
-RLSD is designed around an RL controller that observes production telemetry and selects inference-time interventions in response to detected FIDS signals.
-
-The proposed intervention classes include:
-
-- output-diversity adjustments for LEA;
-- locale-specific prompting for LRLC; and
-- intent-diversification strategies for IAD.
-
-The paper also develops a theoretical bounded-degradation guarantee under stated assumptions.
-
-RLSD is presented here as a **research framework and theoretical proposal**, not as a claim that a production-scale implementation or controlled empirical validation is included in this repository.
+RLSD is proposed as an inference-time adaptation framework: an RL controller observes production telemetry and selects targeted interventions in response to detected FIDS signals, without requiring model retraining. RLSD is presented as a research framework and theoretical proposal; this repository does not claim a production-scale implementation or controlled empirical validation.
 
 ## Evidence and Scope
 
-The FIDS framework is motivated by operational observations from large-scale multilingual NLP deployments and by theoretical analysis.
-
-The paper does **not** present this repository as a completed production-scale experimental benchmark.
-
-In particular, the repository does not currently claim:
+The FIDS framework is motivated by production-scale observations from multilingual LLM deployment and grounded in formal analysis. This repository does not claim:
 
 - a controlled randomized evaluation of FIDS;
 - a production-scale implementation of RLSD;
-- a validated benchmark suite;
-- causal identification of every proposed feedback mechanism; or
-- empirical proof that the proposed mitigation framework improves user outcomes.
+- a validated benchmark suite; or
+- empirical proof that the proposed adaptation framework improves user outcomes.
 
-These are important directions for future work.
-
-## Research Questions
-
-The project motivates several research questions:
-
-- How can feedback-induced changes in query distributions be detected longitudinally?
-- How can FIDS mechanisms be distinguished from ordinary distribution shift?
-- How does FIDS affect underrepresented linguistic populations?
-- Which evaluation metrics can detect degradation that aggregate model scores obscure?
-- Can inference-time adaptation stabilize deployed systems under measurable feedback dynamics?
-- How should multilingual LLM evaluation incorporate temporal and locale-level performance trajectories?
+These are identified as future work in the paper's limitations section.
 
 ## Repository Structure
 
 ```text
 fids-llm-deployment/
 │
-├── README.md
+├── README.md                    (this file)
 │
 ├── paper/
-│   └── README.md
+│   ├── FIDS.pdf
+│   └── README.md                (paper metadata and citation)
 │
 ├── docs/
-│   ├── research-overview.md
-│   └── fids-taxonomy.md
+│   ├── research-overview.md     (motivation, scope, research questions)
+│   └── fids-taxonomy.md         (full taxonomy detail)
 │
-└── LICENSE
+└── LICENSE                      (CC BY 4.0)
+```
+
+## Citation
+
+```
+Fatima, M. (2026). Feedback-Induced Distribution Shift in Multilingual LLM
+Deployment: Evidence, Characterization, and RL-Based Adaptation Strategies.
+Zenodo. https://doi.org/10.5281/zenodo.21728189
+```
+
+## Contact
+
+Mohib Fatima · mohib.fatima.edu@gmail.com · [ORCID](https://orcid.org/0009-0009-4138-7698)
