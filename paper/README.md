@@ -18,11 +18,20 @@ https://doi.org/10.5281/zenodo.21728189
 
 ## Abstract
 
-Large language models deployed at scale in multilingual production environments exhibit a class of failure modes that we term feedback-induced distribution shift (FIDS): a phenomenon where model-generated outputs systematically reshape the input distribution of subsequent queries, creating compounding quality degradation over time.
+Large language models deployed at scale in multilingual production environments
+exhibit a class of failure modes in which design and evaluation choices — not
+model limitations — allow localized quality declines to persist while aggregate
+metrics remain stable. This paper terms this phenomenon feedback-induced
+distribution shift (FIDS).
 
-The paper characterizes three FIDS subtypes — lexical echo amplification, low-resource locale collapse, and intent-anchor drift — and develops a formal taxonomy and theoretical analysis of their conditions and severity.
+The paper characterizes three mechanisms through which FIDS emerges — the
+Aggregate Masking Effect (AME), the Aspirational Deferral Lock (ADL), and
+Low-Resource Locale Collapse (LRLC) — and develops a formal taxonomy with
+proof-backed characterizations of each.
 
-It also introduces RL-Stable Deployment (RLSD), a reinforcement-learning-based framework for dynamically adapting LLM inference policies in response to detected FIDS signals without requiring model retraining.
+It also introduces RL-Stable Deployment (RLSD), a reinforcement-learning-based
+framework for dynamically adapting LLM inference policies in response to
+detected FIDS signals without requiring model retraining.
 
 ## Version of Record
 
