@@ -11,10 +11,10 @@ Feedback-Induced Distribution Shift in Multilingual LLM Deployment: Evidence, Ch
 
 **Document type:** Technical Report
 
-**DOI:** https://doi.org/10.5281/zenodo.21728189
+**DOI:** https://doi.org/10.5281/zenodo.22216765
 
 **Zenodo record:**  
-https://doi.org/10.5281/zenodo.21728189
+https://doi.org/10.5281/zenodo.22216765
 
 ## Abstract
 
@@ -37,7 +37,7 @@ detected FIDS signals without requiring model retraining.
 
 The citable version of the paper is hosted on Zenodo:
 
-https://doi.org/10.5281/zenodo.21728189
+https://doi.org/10.5281/zenodo.22216765
 
 ## License
 
@@ -48,10 +48,10 @@ The paper is released under the Creative Commons Attribution 4.0 International l
 
 For citation and the canonical public record, use the Zenodo DOI:
 
-https://doi.org/10.5281/zenodo.21728189
+https://doi.org/10.5281/zenodo.22216765
 
 ## Citation
 
 If you reference this work, please cite:
 
-> Fatima, M. (2026). *Feedback-Induced Distribution Shift in Multilingual LLM Deployment: Evidence, Characterization, and RL-Based Adaptation Strategies*. Technical Report. https://doi.org/10.5281/zenodo.21728189
+> Fatima, M. (2026). *Feedback-Induced Distribution Shift in Multilingual LLM Deployment: Evidence, Characterization, and RL-Based Adaptation Strategies*. Technical Report. https://doi.org/10.5281/zenodo.22216765
