@@ -6,8 +6,8 @@ Research repository accompanying:
 
 **Mohib Fatima · 2026 · Technical Report**
 
-[Read the paper on Zenodo](https://doi.org/10.5281/zenodo.21728189) ·
-[DOI: 10.5281/zenodo.21728189](https://doi.org/10.5281/zenodo.21728189)
+[Read the paper on Zenodo](https://doi.org/10.5281/zenodo.22216765) ·
+[DOI: 10.5281/zenodo.22216765](https://doi.org/10.5281/zenodo.22216765)
 
 ---
 
@@ -66,7 +66,7 @@ fids-llm-deployment/
 ```
 Fatima, M. (2026). Feedback-Induced Distribution Shift in Multilingual LLM
 Deployment: Evidence, Characterization, and RL-Based Adaptation Strategies.
-Zenodo. https://doi.org/10.5281/zenodo.21728189
+Zenodo. https://doi.org/10.5281/zenodo.22216765
 ```
 
 ## Contact
