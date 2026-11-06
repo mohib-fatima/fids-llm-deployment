@@ -12,11 +12,11 @@ FIDS describes a systems-level failure in which design and evaluation choices, n
 
 ## What FIDS Is Not
 
-FIDS is not a claim about any specific deployed system's current internal metrics. It is not an empirical benchmark result. It is a formal characterization of structural failure modes, grounded in production experience, with proof-backed guarantees under stated assumptions. Where the paper uses illustrative numeric examples, they are explicitly labeled as illustrative, not as measured findings.
+FIDS is not a claim about any specific deployed system's current internal metrics. It is a formal characterization of structural failure modes, grounded in production experience, with proofs under stated assumptions. The paper includes an empirical illustration on public data (NLLB-200 on FLORES-200, Section 6), but the traffic weights in it are synthetic, so it shows the mechanism and does not measure a real deployment. Other numeric examples in the paper are labeled as illustrative, not as measured findings.
 
 ## RL-Stable Deployment (RLSD)
 
-The paper proposes RLSD as a response to these failure modes: an inference-time adaptation framework where a reinforcement learning controller observes production telemetry and selects targeted interventions, without requiring model retraining. RLSD is a design proposal. It has not been implemented at production scale in this repository, and the paper is explicit that its theoretical stability bound is an operating principle under stated assumptions, not a fully derived guarantee.
+The paper proposes RLSD as a response to these failure modes: an inference-time adaptation framework where a reinforcement learning controller observes production telemetry and selects targeted interventions, without requiring model retraining. RLSD is a design proposal. It has not been implemented at production scale in this repository. The paper states its worst-case stability bound as a conjecture, with a toy special case worked out.
 
 ## Open Research Questions
 
@@ -28,8 +28,8 @@ The paper proposes RLSD as a response to these failure modes: an inference-time 
 
 ## Relationship to the Author's Second Paper
 
-A related but distinct project, examining engagement-accuracy decoupling in LLM-mediated search, is in progress separately. Both projects share a common thread: ordinary optimization processes (aggregate averaging in FIDS, engagement-based ranking in the search paper) producing predictable, structural harm without any single actor making an obviously bad decision.
+A related but distinct project, on engagement-accuracy decoupling in LLM-mediated search (Triangulation Collapse), is a separate preprint: https://doi.org/10.5281/zenodo.22182821. Its code and data are at https://github.com/mohib-fatima/tc-paper. Both projects share a common thread: ordinary optimization processes (aggregate averaging in FIDS, engagement-based ranking in the search paper) producing predictable, structural harm without any single actor making an obviously bad decision.
 
 ## Status
 
-This is an active, independent research project. The FIDS paper is published on Zenodo (DOI: 10.5281/zenodo.21728189) and an arXiv submission is in progress, pending category endorsement. See the main [README](../README.md) for citation details.
+This is an active, independent research project. The paper is a preprint on Zenodo (all versions: https://doi.org/10.5281/zenodo.21728188). See the main [README](../README.md) for the paper and data.
