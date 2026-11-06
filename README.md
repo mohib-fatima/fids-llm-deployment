@@ -10,9 +10,9 @@ Zenodo (all versions, always the latest): https://doi.org/10.5281/zenodo.2172818
 
 LLMs deployed across many languages can lose quality for underrepresented languages over time while aggregate metrics stay stable. The paper calls this Feedback-Induced Distribution Shift (FIDS) and looks at three mechanisms:
 
-- **Aggregate Masking Effect (AME):** a good overall average hides a bad worst case.
-- **Low-Resource Locale Collapse (LRLC):** quality in low-resource languages falls further when feedback and evaluation favor high-resource ones.
-- **Aspirational Deferral Lock (ADL):** a scheduler that favors languages already scoring well never gets to the ones that need work.
+- **Aggregate Masking Effect (AME):** a traffic-weighted quality metric hides a collapse in a small locale.
+- **Low-Resource Locale Collapse (LRLC):** lower quality in a locale reduces human feedback and raises the share of model-generated data, which lowers quality further.
+- **Aspirational Deferral Lock (ADL):** fixes for locales with no weight in the prioritization objective are never selected.
 
 The paper proves three propositions and a small toy model. RL-Stable Deployment (RLSD) is a design proposal, and its worst-case bound is a conjecture, not a result.
 
