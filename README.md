@@ -17,5 +17,5 @@ python lrlc_tiers.py FLORES-devtest-202-3B.tsv flores_README.md lang2tax.txt .
 **Notes**
 - Traffic weights are synthetic. The primary scheme was fixed before looking at results. Three other schemes are reported.
 - 175 of 201 languages matched the taxonomy by a fixed rule. The unmatched and conflicting codes are listed in `lrlc_results.json`.
-- The scores come from a source under CC BY-NC-SA 4.0. The per-language tables are derived from it and carry the same terms. The code is yours to reuse under the repository license.
+- The scores come from a source under CC BY-NC-SA 4.0. The per-language tables are derived from it and carry the same terms. The code can be reused under the repository license.
 - chrF++ has script-level biases (Chinese and Japanese score low). See Section 6.3 of the paper.
