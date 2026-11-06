@@ -1,0 +1,50 @@
+{
+ "directions": 40602,
+ "languages": 201,
+ "unweighted_mean": 50.11,
+ "worst_language": "knc_Arab",
+ "worst_score": 13.54,
+ "bottom10": [
+  "knc_Arab",
+  "taq_Tfng",
+  "dyu_Latn",
+  "fon_Latn",
+  "ace_Arab",
+  "dik_Latn",
+  "umb_Latn",
+  "taq_Latn",
+  "cjk_Latn",
+  "fuv_Latn"
+ ],
+ "bottom10_mean": 24.47,
+ "schemes": {
+  "primary: top10 80% equal, rest 20% equal": {
+   "Q_agg": 57.03,
+   "worst_traffic_share_pct": 0.105,
+   "gap_to_worst": 43.49,
+   "bottom10_traffic_share_pct": 1.05,
+   "drop_in_Q_agg_if_bottom10_collapse_to_0": 0.26
+  },
+  "top10 80%, Zipf within top10": {
+   "Q_agg": 55.54,
+   "worst_traffic_share_pct": 0.105,
+   "gap_to_worst": 42.0,
+   "bottom10_traffic_share_pct": 1.05,
+   "drop_in_Q_agg_if_bottom10_collapse_to_0": 0.26
+  },
+  "top10 60% equal": {
+   "Q_agg": 55.19,
+   "worst_traffic_share_pct": 0.209,
+   "gap_to_worst": 41.64,
+   "bottom10_traffic_share_pct": 2.09,
+   "drop_in_Q_agg_if_bottom10_collapse_to_0": 0.51
+  },
+  "top10 90% equal": {
+   "Q_agg": 57.96,
+   "worst_traffic_share_pct": 0.052,
+   "gap_to_worst": 44.41,
+   "bottom10_traffic_share_pct": 0.52,
+   "drop_in_Q_agg_if_bottom10_collapse_to_0": 0.13
+  }
+ }
+}

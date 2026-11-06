@@ -1,0 +1,92 @@
+{
+ "languages_total": 201,
+ "matched": 175,
+ "unmatched": [
+  "acm_Arab",
+  "acq_Arab",
+  "aeb_Arab",
+  "ajp_Arab",
+  "apc_Arab",
+  "ars_Arab",
+  "ary_Arab",
+  "cjk_Latn",
+  "hne_Deva",
+  "kea_Latn",
+  "kmb_Latn",
+  "lua_Latn",
+  "luo_Latn",
+  "tzm_Tfng"
+ ],
+ "conflicting": [
+  "bel_Cyrl",
+  "fuv_Latn",
+  "grn_Latn",
+  "hat_Latn",
+  "kbp_Latn",
+  "khk_Cyrl",
+  "ltz_Latn",
+  "oci_Latn",
+  "run_Latn",
+  "sin_Sinh",
+  "sot_Latn",
+  "war_Latn"
+ ],
+ "tiers": {
+  "High": {
+   "n": 25,
+   "mean": 57.27,
+   "median": 59.2
+  },
+  "Mid": {
+   "n": 42,
+   "mean": 56.34,
+   "median": 56.35
+  },
+  "Low": {
+   "n": 108,
+   "mean": 46.48,
+   "median": 47.97
+  }
+ },
+ "classes": {
+  "0": {
+   "n": 19,
+   "mean": 36.21
+  },
+  "1": {
+   "n": 89,
+   "mean": 48.68
+  },
+  "2": {
+   "n": 16,
+   "mean": 50.94
+  },
+  "3": {
+   "n": 26,
+   "mean": 59.66
+  },
+  "4": {
+   "n": 18,
+   "mean": 59.31
+  },
+  "5": {
+   "n": 7,
+   "mean": 52.02
+  }
+ },
+ "high_minus_low_gap": 10.79,
+ "gap_ci95": [
+  6.49,
+  14.74
+ ],
+ "spearman_class_vs_quality": 0.522,
+ "spearman_ci95": [
+  0.39,
+  0.64
+ ],
+ "without_chinese_japanese": {
+  "high_mean": 59.94,
+  "mid_mean": 56.34,
+  "gap": 13.36
+ }
+}

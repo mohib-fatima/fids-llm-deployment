@@ -1,0 +1,176 @@
+code	name	joshi_class	tier	chrfpp
+arb_Arab	modern standard arabic	5	High	60.39
+deu_Latn	german	5	High	65.14
+fra_Latn	french	5	High	68.91
+jpn_Jpan	japanese	5	High	40.11
+spa_Latn	spanish	5	High	56.66
+zho_Hans	chinese (simplified)	5	High	39.11
+zho_Hant	chinese (traditional)	5	High	33.81
+cat_Latn	catalan	4	High	67.10
+ces_Latn	czech	4	High	60.50
+eus_Latn	basque	4	High	53.11
+fin_Latn	finnish	4	High	57.19
+hin_Deva	hindi	4	High	61.42
+hrv_Latn	croatian	4	High	59.25
+hun_Latn	hungarian	4	High	58.12
+ita_Latn	italian	4	High	59.20
+kor_Hang	korean	4	High	45.29
+nld_Latn	dutch	4	High	56.86
+pes_Arab	western persian	4	High	56.05
+pol_Latn	polish	4	High	52.66
+por_Latn	portuguese	4	High	70.34
+rus_Cyrl	russian	4	High	58.73
+srp_Cyrl	serbian	4	High	62.64
+swe_Latn	swedish	4	High	67.91
+tur_Latn	turkish	4	High	60.80
+vie_Latn	vietnamese	4	High	60.45
+afr_Latn	afrikaans	3	Mid	70.27
+arz_Arab	egyptian arabic	3	Mid	51.64
+ben_Beng	bengali	3	Mid	54.88
+bos_Latn	bosnian	3	Mid	62.39
+bul_Cyrl	bulgarian	3	Mid	65.30
+ceb_Latn	cebuano	3	Mid	62.19
+dan_Latn	danish	3	Mid	68.26
+ell_Grek	greek	3	Mid	56.41
+est_Latn	estonian	3	Mid	58.52
+glg_Latn	galician	3	Mid	63.44
+heb_Hebr	hebrew	3	Mid	61.47
+ind_Latn	indonesian	3	Mid	67.98
+kat_Geor	georgian	3	Mid	51.55
+kaz_Cyrl	kazakh	3	Mid	55.02
+lit_Latn	lithuanian	3	Mid	55.79
+lvs_Latn	standard latvian	3	Mid	56.10
+ron_Latn	romanian	3	Mid	64.41
+slk_Latn	slovak	3	Mid	61.16
+slv_Latn	slovenian	3	Mid	57.89
+tam_Taml	tamil	3	Mid	56.29
+tgl_Latn	tagalog	3	Mid	64.35
+tha_Thai	thai	3	Mid	48.53
+ukr_Cyrl	ukrainian	3	Mid	59.57
+urd_Arab	urdu	3	Mid	54.91
+uzn_Latn	northern uzbek	3	Mid	55.80
+zsm_Latn	standard malay	3	Mid	67.03
+amh_Ethi	amharic	2	Mid	48.38
+gle_Latn	irish	2	Mid	59.20
+hau_Latn	hausa	2	Mid	54.37
+isl_Latn	icelandic	2	Mid	52.96
+lao_Laoo	lao	2	Mid	52.33
+mar_Deva	marathi	2	Mid	54.77
+mlt_Latn	maltese	2	Mid	69.75
+pan_Guru	eastern panjabi	2	Mid	57.28
+san_Deva	sanskrit	2	Mid	37.23
+swh_Latn	swahili	2	Mid	62.56
+tir_Ethi	tigrinya	2	Mid	36.84
+tsn_Latn	tswana	2	Mid	49.86
+wol_Latn	wolof	2	Mid	33.99
+xho_Latn	xhosa	2	Mid	53.81
+yor_Latn	yoruba	2	Mid	34.59
+zul_Latn	zulu	2	Mid	57.20
+ace_Arab	acehnese	1	Low	26.05
+ace_Latn	acehnese	1	Low	43.26
+aka_Latn	akan	1	Low	39.50
+als_Latn	tosk albanian	1	Low	61.86
+asm_Beng	assamese	1	Low	46.75
+ast_Latn	asturian	1	Low	59.58
+ayr_Latn	central aymara	1	Low	30.89
+azb_Arab	south azerbaijani	1	Low	33.74
+azj_Latn	north azerbaijani	1	Low	48.17
+bak_Cyrl	bashkir	1	Low	52.27
+bam_Latn	bambara	1	Low	35.16
+bho_Deva	bhojpuri	1	Low	49.38
+bjn_Arab	banjar	1	Low	28.09
+bjn_Latn	banjar	1	Low	54.01
+bod_Tibt	standard tibetan	1	Low	32.41
+bug_Latn	buginese	1	Low	38.81
+ckb_Arab	central kurdish	1	Low	51.96
+crh_Latn	crimean tatar	1	Low	51.48
+cym_Latn	welsh	1	Low	70.01
+dik_Latn	southwestern dinka	1	Low	26.77
+dzo_Tibt	dzongkha	1	Low	36.26
+epo_Latn	esperanto	1	Low	64.26
+ewe_Latn	ewe	1	Low	38.64
+fao_Latn	faroese	1	Low	52.18
+fij_Latn	fijian	1	Low	45.13
+fur_Latn	friulian	1	Low	61.31
+gaz_Latn	west central oromo	1	Low	42.07
+gla_Latn	scottish gaelic	1	Low	52.21
+guj_Gujr	gujarati	1	Low	59.20
+hye_Armn	armenian	1	Low	57.49
+ibo_Latn	igbo	1	Low	47.04
+ilo_Latn	ilocano	1	Low	56.90
+jav_Latn	javanese	1	Low	58.61
+kab_Latn	kabyle	1	Low	38.18
+kan_Knda	kannada	1	Low	56.64
+kas_Arab	kashmiri	1	Low	45.17
+kas_Deva	kashmiri	1	Low	31.95
+khm_Khmr	khmer	1	Low	44.99
+kik_Latn	kikuyu	1	Low	41.57
+kin_Latn	kinyarwanda	1	Low	51.84
+kir_Cyrl	kyrgyz	1	Low	46.81
+kmr_Latn	northern kurdish	1	Low	44.45
+kon_Latn	kikongo	1	Low	44.84
+lij_Latn	ligurian	1	Low	58.16
+lim_Latn	limburgish	1	Low	53.43
+lin_Latn	lingala	1	Low	49.12
+lmo_Latn	lombard	1	Low	46.59
+ltg_Latn	latgalian	1	Low	54.27
+lug_Latn	ganda	1	Low	41.66
+mai_Deva	maithili	1	Low	55.50
+mal_Mlym	malayalam	1	Low	56.16
+min_Latn	minangkabau	1	Low	55.63
+mkd_Cyrl	macedonian	1	Low	63.23
+mri_Latn	maori	1	Low	47.94
+mya_Mymr	burmese	1	Low	42.81
+nno_Latn	norwegian nynorsk	1	Low	60.17
+nob_Latn	norwegian bokmål	1	Low	62.44
+npi_Deva	nepali	1	Low	56.03
+nso_Latn	northern sotho	1	Low	55.60
+nya_Latn	nyanja	1	Low	48.00
+ory_Orya	odia	1	Low	54.81
+pag_Latn	pangasinan	1	Low	48.34
+pap_Latn	papiamento	1	Low	64.28
+pbt_Arab	southern pashto	1	Low	48.44
+plt_Latn	plateau malagasy	1	Low	53.05
+quy_Latn	ayacucho quechua	1	Low	30.28
+sag_Latn	sango	1	Low	34.81
+sat_Beng	santali	1	Low	33.48
+scn_Latn	sicilian	1	Low	48.45
+smo_Latn	samoan	1	Low	52.81
+sna_Latn	shona	1	Low	46.63
+snd_Arab	sindhi	1	Low	56.68
+som_Latn	somali	1	Low	47.48
+srd_Latn	sardinian	1	Low	61.44
+ssw_Latn	swati	1	Low	47.00
+sun_Latn	sundanese	1	Low	54.08
+szl_Latn	silesian	1	Low	57.61
+tat_Cyrl	tatar	1	Low	52.72
+tel_Telu	telugu	1	Low	59.89
+tgk_Cyrl	tajik	1	Low	54.61
+tpi_Latn	tok pisin	1	Low	47.28
+tso_Latn	tsonga	1	Low	51.61
+tuk_Latn	turkmen	1	Low	49.55
+tum_Latn	tumbuka	1	Low	39.75
+twi_Latn	twi	1	Low	42.08
+uig_Arab	uyghur	1	Low	45.78
+vec_Latn	venetian	1	Low	56.87
+ydd_Hebr	eastern yiddish	1	Low	52.09
+yue_Hant	yue chinese	1	Low	35.67
+awa_Deva	awadhi	0	Low	52.86
+ban_Latn	balinese	0	Low	50.92
+bem_Latn	bemba	0	Low	43.84
+dyu_Latn	dyula	0	Low	22.04
+fon_Latn	fon	0	Low	25.23
+kac_Latn	jingpho	0	Low	38.61
+kam_Latn	kamba	0	Low	29.17
+knc_Arab	central kanuri	0	Low	13.54
+knc_Latn	central kanuri	0	Low	29.86
+lus_Latn	mizo	0	Low	38.97
+mag_Deva	magahi	0	Low	62.88
+mni_Beng	meitei	0	Low	44.53
+mos_Latn	mossi	0	Low	28.15
+nus_Latn	nuer	0	Low	33.18
+prs_Arab	dari	0	Low	57.44
+shn_Mymr	shan	0	Low	40.75
+taq_Latn	tamasheq	0	Low	27.20
+taq_Tfng	tamasheq	0	Low	21.98
+umb_Latn	umbundu	0	Low	26.82
